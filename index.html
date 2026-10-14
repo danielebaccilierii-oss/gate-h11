@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gate H11 — Cocktails & Late-Night Departures · Helsinginkatu, Helsinki</title>
+<meta name="description" content="Gate H11 is Helsinki's cocktail bar on Helsinginkatu 11 — an airport of flavours. Signature cocktails, group bookings and events. Open till 2 AM, 4.3 stars from 970 reviews.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Gate H11",
+  "servesCuisine": "Cocktails",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Helsinginkatu 11",
+    "addressLocality": "Helsinki",
+    "postalCode": "00500",
+    "addressCountry": "FI"
+  },
+  "openingHours": "Mo-Su 16:00-02:00",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.3", "reviewCount": "970" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --yel:#ffd400; --blk:#0b0b0b; --panel:#141414; --line:#2b2b2b; --txt:#f2f2f2; --dim:#9a9a9a;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--blk);color:var(--txt);padding-bottom:84px}
+.mono{font-family:'Space Mono',monospace}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+/* topbar */
+.topbar{position:sticky;top:0;z-index:60;background:var(--blk);display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:3px solid var(--yel)}
+.logo{font-family:'Space Mono';font-weight:700;font-size:17px;letter-spacing:.08em}
+.logo b{color:var(--yel)}
+.lang{background:transparent;border:2px solid var(--yel);color:var(--yel);font-weight:800;font-size:12px;padding:5px 12px;border-radius:0;cursor:pointer;letter-spacing:.06em}
+/* hero */
+.hero{padding:60px 0 46px;background:linear-gradient(180deg,#000,var(--blk));position:relative;overflow:hidden}
+.hero .term{font-family:'Space Mono';color:var(--yel);font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-family:'Space Mono';font-weight:700;font-size:clamp(34px,10.5vw,62px);line-height:1.02;color:#fff}
+.hero h1 .y{color:var(--yel)}
+.hero p.sub{margin:18px 0 26px;font-size:16px;max-width:38ch;color:var(--dim);font-weight:600}
+.cta{display:inline-block;background:var(--yel);color:#000;font-family:'Space Mono';font-weight:700;font-size:15px;letter-spacing:.08em;padding:16px 30px;text-decoration:none;text-transform:uppercase;box-shadow:6px 6px 0 #fff;transition:transform .15s,box-shadow .15s}
+.cta:active{transform:translate(3px,3px);box-shadow:2px 2px 0 #fff}
+.micro{margin-top:14px;font-size:13px;color:var(--yel);font-weight:700;font-family:'Space Mono'}
+/* departures board */
+.board{background:#000;border-top:3px solid var(--yel);border-bottom:3px solid var(--yel);padding:26px 0;overflow:hidden}
+.board .wrap{padding:0 14px}
+.bhead{display:flex;justify-content:space-between;font-family:'Space Mono';font-weight:700;color:var(--yel);font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px dashed #3a3a3a;padding-bottom:8px;margin-bottom:6px}
+.brow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:13px 2px;border-bottom:1px dashed #262626}
+.brow .cock{font-family:'Space Mono';font-weight:700;font-size:15px;color:#fff}
+.brow .dest{font-family:'Space Mono';font-size:12px;color:var(--dim);flex:1;text-align:right;margin:0 10px}
+.brow .status{font-family:'Space Mono';font-weight:700;font-size:12px;color:var(--yel);white-space:nowrap}
+.brow .status::before{content:"● ";animation:blink 1.4s steps(1) infinite}
+@keyframes blink{50%{opacity:.15}}
+/* sections */
+.kick{color:var(--yel);font-family:'Space Mono';font-weight:700;letter-spacing:.22em;font-size:11px;text-transform:uppercase;margin-bottom:10px}
+h2{font-family:'Space Mono';font-weight:700;font-size:clamp(26px,7.5vw,40px);margin-bottom:22px;line-height:1.05}
+.about p{font-size:15.5px;line-height:1.7;margin-bottom:14px;color:#c4c4c4}
+/* boarding pass */
+.pass{background:#fff;color:#111;border-radius:14px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.5);margin-top:8px}
+.pass .top{background:var(--yel);padding:14px 18px;display:flex;justify-content:space-between;align-items:center}
+.pass .top b{font-family:'Space Mono';font-size:14px;letter-spacing:.1em}
+.pass .top span{font-family:'Space Mono';font-size:11px;font-weight:700}
+.pass .body{padding:20px 18px}
+.pass .route{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.pass .route .apt{flex:1}
+.pass .route .apt b{display:block;font-family:'Space Mono';font-size:26px}
+.pass .route .apt span{font-size:11px;font-weight:700;color:#666;text-transform:uppercase}
+.pass .route .plane{font-size:22px;flex:0 0 auto}
+.pass .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;border-top:2px dashed #ccc;padding-top:14px}
+.pass .grid div b{display:block;font-family:'Space Mono';font-size:13px}
+.pass .grid div span{font-size:10px;font-weight:800;color:#888;text-transform:uppercase;letter-spacing:.06em}
+.pass .tear{border-top:2px dashed #ccc;margin:0 18px;position:relative}
+.pass .tear::before,.pass .tear::after{content:"";position:absolute;top:-8px;width:16px;height:16px;border-radius:50%;background:var(--blk)}
+.pass .tear::before{left:-26px}
+.pass .tear::after{right:-26px}
+.pass .cta2{display:block;background:#000;color:var(--yel);text-align:center;text-decoration:none;font-family:'Space Mono';font-weight:700;font-size:14px;letter-spacing:.1em;padding:15px;margin:16px 18px 18px;text-transform:uppercase}
+/* reviews */
+.rev{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--yel);padding:18px;margin-bottom:12px}
+.rev .stars{color:var(--yel);font-size:18px;letter-spacing:2px}
+.rev b{display:block;margin:6px 0 4px;font-size:15px}
+.rev p{font-size:13.5px;color:var(--dim);line-height:1.5}
+.score{text-align:center;margin-bottom:22px}
+.score .big{font-family:'Space Mono';font-weight:700;font-size:52px;color:var(--yel)}
+.score .cnt{font-size:12px;font-weight:800;color:var(--dim);text-transform:uppercase;letter-spacing:.12em}
+/* hours + map */
+.hrow{display:flex;justify-content:space-between;padding:13px 4px;border-bottom:1px dashed #2b2b2b;font-weight:600;font-size:15px}
+.hrow.today{color:var(--yel);font-weight:800}
+.hrow.today::before{content:"● ";font-size:10px;vertical-align:2px}
+.mapbox{margin-top:26px;border:3px solid var(--yel)}
+.mapbox iframe{width:100%;height:260px;border:0;display:block;filter:grayscale(1) invert(.9) contrast(1.05)}
+.addr{text-align:center;margin-top:14px;font-weight:700;font-size:15px}
+.addr small{display:block;color:var(--dim);font-weight:600;margin-top:3px}
+/* contact */
+.contact{text-align:center}
+.cbtns{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.cbtn{background:var(--yel);color:#000;text-decoration:none;font-family:'Space Mono';font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.08em;padding:16px}
+.cbtn.ghost{background:transparent;border:2px solid var(--yel);color:var(--yel)}
+/* sticky */
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;background:#000;border-top:3px solid var(--yel)}
+.stickybar a{flex:1;text-align:center;padding:14px 4px 16px;text-decoration:none;color:var(--txt);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.stickybar a + a{border-left:1px solid #2b2b2b}
+.stickybar .ico{display:block;font-size:20px;margin-bottom:3px}
+.stickybar a.wa{background:var(--yel);color:#000}
+footer{background:#000;color:#6d6d6d;text-align:center;font-size:11.5px;padding:20px 16px 100px;line-height:1.7}
+@media(min-width:640px){.cbtns{flex-direction:row;justify-content:center}.cbtn{padding:16px 34px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">GATE <b>H11</b></div>
+  <button class="lang" id="langBtn" data-en="FI" data-fi="EN" onclick="toggleLang()">FI</button>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="term" data-en="Helsinginkatu 11 · now boarding" data-fi="Helsinginkatu 11 · nyt boardaamassa">Helsinginkatu 11 · now boarding</div>
+    <h1 data-en="Your next stop:" data-fi="Seuraava pysähdyksesi:">Your next stop:</h1>
+    <h1 class="y" data-en="a better night." data-fi="parempi ilta.">a better night.</h1>
+    <p class="sub" data-en="Helsinki's cocktail departure lounge — signature drinks, groups welcome, last call at 2 AM." data-fi="Helsingin cocktail-lounge — signature-juomia, ryhmät tervetulleita, viimeinen kutsu klo 2.">Helsinki's cocktail departure lounge — signature drinks, groups welcome, last call at 2 AM.</p>
+    <a class="cta" href="#board" data-en="View departures ↓" data-fi="Katso lähdöt ↓">View departures ↓</a>
+    <div class="micro" data-en="⭐ 4.3 · 970 reviews" data-fi="⭐ 4.3 · 970 arvostelua">⭐ 4.3 · 970 reviews</div>
+  </div>
+</section>
+
+<section class="board" id="board">
+  <div class="wrap">
+    <div class="bhead"><span data-en="COCKTAIL" data-fi="COCKTAIL">COCKTAIL</span><span data-en="DESTINATION" data-fi="MÄÄRÄNPÄÄ">DESTINATION</span><span data-en="GATE" data-fi="PORTTI">GATE</span></div>
+    <div class="brow"><span class="cock">[COCKTAIL 1]</span><span class="dest" data-en="[gusto/sapore]" data-fi="[gusto/sapore]">[gusto/sapore]</span><span class="status" data-en="H11 · [PREZZO]" data-fi="H11 · [PREZZO]">H11 · [PREZZO]</span></div>
+    <div class="brow"><span class="cock">[COCKTAIL 2]</span><span class="dest" data-en="[gusto/sapore]" data-fi="[gusto/sapore]">[gusto/sapore]</span><span class="status" data-en="H11 · [PREZZO]" data-fi="H11 · [PREZZO]">H11 · [PREZZO]</span></div>
+    <div class="brow"><span class="cock">[COCKTAIL 3]</span><span class="dest" data-en="[gusto/sapore]" data-fi="[gusto/sapore]">[gusto/sapore]</span><span class="status" data-en="H11 · [PREZZO]" data-fi="H11 · [PREZZO]">H11 · [PREZZO]</span></div>
+    <div class="brow"><span class="cock">[COCKTAIL 4]</span><span class="dest" data-en="[gusto/sapore]" data-fi="[gusto/sapore]">[gusto/sapore]</span><span class="status" data-en="H11 · [PREZZO]" data-fi="H11 · [PREZZO]">H11 · [PREZZO]</span></div>
+    <div class="brow"><span class="cock">[COCKTAIL 5]</span><span class="dest" data-en="[gusto/sapore]" data-fi="[gusto/sapore]">[gusto/sapore]</span><span class="status" data-en="H11 · [PREZZO]" data-fi="H11 · [PREZZO]">H11 · [PREZZO]</span></div>
+    <div class="brow"><span class="cock" data-en="Non-alcoholic" data-fi="Alkoholiton">Non-alcoholic</span><span class="dest" data-en="[0.0% departure]" data-fi="[0.0 % lähtö]">[0.0% departure]</span><span class="status" data-en="H11 · [PREZZO]" data-fi="H11 · [PREZZO]">H11 · [PREZZO]</span></div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <div class="kick" data-en="Why Gate H11" data-fi="Miksi Gate H11">Why Gate H11</div>
+    <h2 data-en="An airport<br>of <span style="color:var(--yel)">flavours</span>" data-fi="Lentoasema<br><span style='color:var(--yel)'>makuja</span>">An airport<br>of <span style="color:var(--yel)">flavours</span></h2>
+    <p data-en="Every cocktail here is a destination. Our bartenders build each drink like a flight plan — precise, memorable, no turbulence. Whether it's a first date, a Friday warm-up or the after-party address, Gate H11 is where Helsinki checks in for the night." data-fi="Jokainen cocktail täällä on määränpää. Baarimestarimme rakentavat jokaisen drinkin kuin lentosuunnitelman — tarkasti, ikimuistoisesti, ilman turbulenssia. Olipa kyseessä ensitreffit, perjantain alkulämmittely tai jatkojen osoite, Gate H11 on Helsingin check-in yöksi.">Every cocktail here is a destination. Our bartenders build each drink like a flight plan — precise, memorable, no turbulence. Whether it's a first date, a Friday warm-up or the after-party address, Gate H11 is where Helsinki checks in for the night.</p>
+  </div>
+</section>
+
+<section class="booksec" id="book">
+  <div class="wrap">
+    <div class="kick" data-en="Groups & events" data-fi="Ryhmät & tapahtumat">Groups & events</div>
+    <h2 data-en="Boarding <span style='color:var(--yel)'>pass</span>" data-fi="Boarding-<span style='color:var(--yel)'>passi</span>">Boarding <span style="color:var(--yel)">pass</span></h2>
+    <div class="pass">
+      <div class="top"><b data-en="GATE H11 · GROUP BOOKING" data-fi="GATE H11 · RYHMÄVARAUS">GATE H11 · GROUP BOOKING</b><span data-en="ADMIT ALL" data-fi="ADMIT ALL">ADMIT ALL</span></div>
+      <div class="body">
+        <div class="route">
+          <div class="apt"><b>NOW</b><span data-en="Your group" data-fi="Ryhmäsi">Your group</span></div>
+          <div class="plane">✈️</div>
+          <div class="apt" style="text-align:right"><b>H11</b><span data-en="Great night" data-fi="Mahtava ilta">Great night</span></div>
+        </div>
+        <div class="grid">
+          <div><b data-en="Any size" data-fi="Mikä tahansa koko">Any size</b><span data-en="Party" data-fi="Juhla">Party</span></div>
+          <div><b>[ORARI]</b><span data-en="Boarding" data-fi="Boarding">Boarding</span></div>
+          <div><b>[PREZZO]</b><span data-en="From / person" data-fi="Alkaen / hlö">From / person</span></div>
+        </div>
+      </div>
+      <div class="tear"></div>
+      <a class="cta2" href="https://wa.me/[WHATSAPP]?text=Hi!%20I%27d%20like%20to%20book%20Gate%20H11%20for%20a%20group%20%F0%9F%9B%AB" data-en="✈️ Book your group" data-fi="✈️ Varaa ryhmällesi">✈️ Book your group</a>
+    </div>
+    <p style="font-size:13px;color:var(--dim);margin-top:16px;text-align:center" data-en="Birthdays, work parties, pre-games, full venue takeovers — tell us the date and the headcount." data-fi="Syntymäpäivät, työjuhlat, etkot, koko baarin varaus — kerro päivämäärä ja henkilömäärä.">Birthdays, work parties, pre-games, full venue takeovers — tell us the date and the headcount.</p>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="kick" data-en="Passenger feedback" data-fi="Matkustajapalaute">Passenger feedback</div>
+    <h2 data-en="Cleared for <span style='color:var(--yel)'>landing</span>" data-fi="Lupa <span style='color:var(--yel)'>laskeutua</span>">Cleared for <span style="color:var(--yel)">landing</span></h2>
+    <div class="score">
+      <div class="big">4.3★</div>
+      <div class="cnt" data-en="970 Google reviews" data-fi="970 Google-arvostelua">970 Google reviews</div>
+    </div>
+    <div class="rev"><div class="stars">★★★★★</div><b data-en="“Best cocktails in the area — the bartenders actually care.”" data-fi="“Alueen parhaat cocktailit — baarimestarit todella välittävät.”">“Best cocktails in the area — the bartenders actually care.”</b></div>
+    <div class="rev"><div class="stars">★★★★☆</div><b data-en="“Perfect spot for a group night — fun concept, great drinks.”" data-fi="“Täydellinen paikka ryhmäillalle — hauska konsepti, loistavat juomat.”">“Perfect spot for a group night — fun concept, great drinks.”</b></div>
+  </div>
+</section>
+
+<section class="hoursmap">
+  <div class="wrap">
+    <div class="kick" data-en="Terminal location" data-fi="Terminaalin sijainti">Terminal location</div>
+    <h2 data-en="Helsinginkatu <span style='color:var(--yel)'>11</span>" data-fi="Helsinginkatu <span style='color:var(--yel)'>11</span>">Helsinginkatu <span style="color:var(--yel)">11</span></h2>
+    <div class="hrow today"><span data-en="Monday – Sunday" data-fi="Maanantai – sunnuntai">Monday – Sunday</span><span data-en="till 2:00 [ORARI]" data-fi="klo 2 asti [ORARI]">till 2:00 [ORARI]</span></div>
+    <div class="mapbox">
+      <iframe title="Gate H11 map" src="https://maps.google.com/maps?q=Helsinginkatu%2011%2C%2000500%20Helsinki&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+    <div class="addr">
+      📍 Helsinginkatu 11, 00500 Helsinki
+      <small data-en="Kallio–Sörnäinen border, easy to reach" data-fi="Kallion ja Sörnäisen rajalla, helppo saapua">Kallio–Sörnäinen border, easy to reach</small>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="kick" data-en="Final call" data-fi="Viimeinen kutsu">Final call</div>
+    <h2 data-en="Gate <span style='color:var(--yel)'>H11</span>" data-fi="Portti <span style='color:var(--yel)'>H11</span>">Gate <span style="color:var(--yel)">H11</span></h2>
+    <div class="cbtns">
+      <a class="cbtn" href="tel:[TELEFONO]" data-en="📞 Call [TELEFONO]" data-fi="📞 Soita [TELEFONO]">📞 Call [TELEFONO]</a>
+      <a class="cbtn ghost" href="mailto:[EMAIL]" data-en="✉️ [EMAIL]" data-fi="✉️ [EMAIL]">✉️ [EMAIL]</a>
+    </div>
+  </div>
+</section>
+
+<nav class="stickybar">
+  <a href="tel:[TELEFONO]"><span class="ico">📞</span><span data-en="Call" data-fi="Soita">Call</span></a>
+  <a class="wa" href="https://wa.me/[WHATSAPP]"><span class="ico">💬</span><span data-en="WhatsApp" data-fi="WhatsApp">WhatsApp</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Helsinginkatu+11,+00500+Helsinki" target="_blank" rel="noopener"><span class="ico">🧭</span><span data-en="Directions" data-fi="Reitti">Directions</span></a>
+</nav>
+
+<footer>
+  GATE H11 · HELSINGINKATU 11, HELSINKI<br>
+  <span data-en="Demo website — final cocktail list, prices and contact details are added together with the owner." data-fi="Demosivusto — lopullinen cocktail-lista, hinnat ja yhteystiedot lisätään yhdessä omistajan kanssa.">Demo website — final cocktail list, prices and contact details are added together with the owner.</span>
+</footer>
+
+<script>
+function toggleLang(){
+  const html=document.documentElement;
+  const to=html.lang==='en'?'fi':'en';
+  html.lang=to;
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const t=el.dataset[to]; if(t!==undefined) el.innerHTML=t;
+  });
+  document.getElementById('langBtn').textContent = to==='en' ? 'FI' : 'EN';
+  try{localStorage.setItem('h11-lang',to)}catch(e){}
+}
+try{const s=localStorage.getItem('h11-lang'); if(s&&s!=='en'){document.documentElement.lang='en'; toggleLang();}}catch(e){}
+</script>
+</body>
+</html>
